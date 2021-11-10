@@ -1,0 +1,199 @@
+@import url('data:application/octet-stream;base64,QGZvbnQtZmFjZSB7CiAgZm9udC1mYW1pbHk6ICdQb3BwaW5zJzsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IDQwMDsKICBzcmM6IHVybChodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tL3MvcG9wcGlucy92MTUvcHhpRXlwOGt2OEpIZ0ZWckpKZmVkdy50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTsKfQpAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogJ1BvcHBpbnMnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNTAwOwogIHNyYzogdXJsKGh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9wb3BwaW5zL3YxNS9weGlCeXA4a3Y4SkhnRlZyTEdUOVoxeGxFQS50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTsKfQpAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogJ1BvcHBpbnMnOwogIGZvbnQtc3R5bGU6IG5vcm1hbDsKICBmb250LXdlaWdodDogNzAwOwogIHNyYzogdXJsKGh0dHBzOi8vZm9udHMuZ3N0YXRpYy5jb20vcy9wb3BwaW5zL3YxNS9weGlCeXA4a3Y4SkhnRlZyTEN6N1oxeGxFQS50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTsKfQo=');
+
+html, body {
+  height: :100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.navbar{
+  padding: .8rem;
+}
+.navbar-nav li {
+  padding-right:10px;  /* Cambia la distanza tra le scritte nella navbar  */
+}
+.nav-link{
+  font-size: 1.1em !important; /* Cambia la dimensione delle scritte nella navbar  */
+}
+
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption {  /* Cambia la poszione delle scritte nel carousel  */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1{
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3{
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 10px;
+}
+
+.btn-primary{
+  background-color: #6648b1;
+  border: 1px solid #563d7c;
+}
+.btn-primary:hover{
+  background-color: #000;
+  border: 1px solid #563d7c;
+}
+
+.jumbotron{
+  padding: 10px;
+  border-radius: 0;
+}
+
+.padding{
+  padding-bottom: 10px;
+}
+
+.welcome{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.welcome hr{    /* la linea grigia sotto "mario test site"  */
+  border-top: 2px solid #b4b4b4;
+  width:95%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+
+
+.fa-code {
+  color: #e54d26;
+}
+.fa-bold{
+  color:#563d7c;
+}
+.fa-css3{
+  color: #2163af;
+}
+
+.fa-code, .fa-bold, .fa-css3{
+font-size: 20px;
+  margin: 1rem;
+}
+
+.fun{     /* tasto emoji  */
+  width: 100%;
+  margin-bottom: 10px;
+}
+ .gif{
+   max-width: 100%;
+ }
+
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 20px;
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+footer a {
+  color: #d5d5d5;
+}
+
+hr.light-100 {  /* la linea sopra Mario Giannantonio  */
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

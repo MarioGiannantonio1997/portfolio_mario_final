@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" >
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/443d3a6a99.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="shortcut icon" type="image/png" href="assets/img/logo_piccolo_nero.png">
+  <title> Portfolio Mario </title>
+</head>
+
+
+<nav class=" navbar navbar-expand-md sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="assets/img/logo_small_icon_only.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu" >
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link active" href="#" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#chisono"> Chi sono </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#progetti"> Progetti </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contatti"> Contatti </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<div class="maincontainer container-fluid text-white ">
+  <div class="ml-5 pt-4">
+    <h5>Ciao, mi chiamo..</h5>
+    <h1>Mario Giannantonio</h1>
+    <h5 class="mb-4">sono uno studente di front-end development presso <span class="text-warning">start2impact</span></h5>
+    <a href="#progetti"><button type="button" class="btn btn-outline-light mt-2">Guarda i miei progetti</button></a>
+    &nbsp; oppure &nbsp;
+    <a href="#chisono"><button type="button" class="btn bottone1 mt-2"> Leggi riguardo me </button></a>
+  </div>
+</div>
+
+<div class="row container2 text-center">
+  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-7">
+    <p class="lead pt-2 px-1"> Hai una domanda o una richiesta e vuoi contattarmi? Usa il form qui a destra! </p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg- col-xl-5  ">
+    <a href="#"><button type="button" class="btn bottone1 btn-lg my-2" data-toggle="modal" data-target="#exampleModal"> Contattami da qua! </button></a>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content ">
+          <div class="modal-header">
+            <h5 class="modal-title " id="exampleModal">Lasciami un messaggio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Il tuo nome:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label ">La tua e-mail:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Messaggio:</label>
+                <textarea class="form-control" id="message-text" rows="8"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+            <button type="button" class="btn bottone1">Invia</button>
+          </div>
+        </div>
+  </div>
+</div>
+
+<!-- Parte "Chi sono" -->
+<section id="chisono" class="py-5">
+
+  <div class="container-fluid">
+    <h3 class="text-center text-black py-5"> Chi sono ?</h3>
+
+    <div class="row g-4">
+      <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5">
+        <div class="card">
+          <div class="card-body text-center">
+            <div class="img1"><img src="assets/img/card-bg.png" alt=""></div>
+            <div class="img2"><img src="assets/img/mario.jpg" style="max-width:50%;" alt=""></div>
+            <h2 class="card-title mt-xl-0"> Mario Giannantonio </h2>
+            <p class="card-text"> Sono nato il 25 Marzo del 1997 a Roma, città dove vivo tutt'ora. Da sempre, mi sono diplomato come perito informatico nel 2017.
+               Dopo un periodo in cui mi sono allontanato dall'informatica mi sono riavvicinato a questo mondo negli ultimi mesi. </p>
+            <a href="assets/files/mario_cv.pdf" download="Mario_Giannantonio_CV_2021"><button type="button" class="btn btn-primary mb-4 "> Scarica il mio CV Vitae </button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-xs-4 mt-sm-4">
+
+        <div class="container">
+          <div class="text-center py-4">
+            <h2> Domande e risposte </h2>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Hai esperienze lavorative passate nel settore dell'informatica?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Nonostante la mia formazione come perito informatico non ho esperienze concrete in questo settore.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Sei disposto ad un eventuale trasferimento di città?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">In questo momento non sono disposto a un trasferimento, nonostante ciò sono disposto a lavorare da remoto se necessario.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+               Obiettivi futuri?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Per ora il mio obiettivo principale è diventare un front-end developer. Poi gradualmente ho intenzione di ottenere competenze come back-end developer per poi diventare un full-stack completo.</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="progetti" class="py-5">
+
+  <h3 class="text-center text-black py-5 "> Progetti </h3>
+  <div>
+    <div class="text-center py-4">
+      <p class="px-4">Visto la mia poca espienza nel settore dello sviluppo web, questo sito al momento rappresenta il mio più grande progetto.
+    Rispetto ai siti a cui ho lavorato qui sotto ho avuto modo di approfondire argomenti, come bootsrap, CSS, icone, mediaquery, problemsolving e molto altro più nello specifico.</p>
+    </div>
+
+    <div class="projectsection row  text-center g-4 mx-1">
+      <div class="col-md ">
+        <div class="card bg-dark text-light">
+          <div class="card-body text-center">
+            <h2 class="mb-3">Primo sito progetto</h2>
+            <div class="img1"><img src="assets/img/Primo-sito.png" alt=""></div>
+            <a href="primo_sito_test" class="btn btn-primary mt-3">Vai al sito</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md ">
+        <div class="card bg-secondary text-light">
+          <div class="card-body text-center">
+            <h2 class="mb-3">Secondo sito progetto</h2>
+            <div class="img1"><img src="assets/img/Secondo-sito.png" alt=""></div>
+            <a href="secondo_sito_test" class="btn btn-dark mt-3">Vai al sito</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contatti">
+  <div class="container-fluid contactsection py-4">
+    <h3 class="text-center text-black py-3"> Contatti </h3>
+
+    <div class="row text-center padding my">
+
+      <div class="col-md-5">
+        <h3 class="py-4"> Links </h3>
+        <a href="https://www.instagram.com/mariogianna/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/mariogianna/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/mario-giannantonio-403587224/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/gripan7" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/gripan2" target="_blank"><i class="fab fa-github"></i></a>
+        <h5 class="py-4"> mario.giannantonio997@gmail.com</h5>
+      </div>
+
+      <div class="col-md-6">
+        <h5 class="py-3"> Hai una richiesta o domanda specifica? -- Contattami da qui sotto. </h5>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Il tuo nome</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+            <small id="emailHelp" class="form-text text-muted">Non condividerò le tue informazioni con nessun'altro</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">La tua e-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Testo</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+        </form>
+        <button type="submit" class="btn btn-primary">Invia</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="">
+        <img src="assets/img/logo_small_icon_only.png" style="max-width:5%;" alt="">
+        <hr class="light">
+        <p>324 - 908 0197</p>
+        <p>mario.giannantonio997@gmail.com</p>
+        <p>Italy, Rome - Via Sergio Tofano 119</p>
+      </div>
+
+      <div class="col-12 py-2">
+        <hr class="light-100">
+        <h5>&copy; Mario Giannantonio 2021</h5>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

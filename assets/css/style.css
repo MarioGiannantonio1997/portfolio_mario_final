@@ -1,0 +1,168 @@
+
+
+body {
+  background-image: url('../img/mainback5.png');
+  font-family: 'Open Sans', sans-serif;
+
+}
+h3{
+font-family: 'Roboto Mono', monospace;
+}
+
+.navbar {
+  padding: 1px;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+  /* Cambia la distanza tra le scritte nella navbar  */
+}
+
+.nav-link {
+  font-size: 20px !important;
+  /* Cambia la dimensione delle scritte nella navbar  */
+  color: #e6e6e6 !important;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+  border-bottom: 1px solid#fff;
+}
+
+.navbar {
+  background-image: linear-gradient(100deg, #C33764, #1D2671);
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-toggler {
+  padding-right: 50px;
+  outline: none !important;
+  border: none !important;
+}
+
+.navbar .fas {
+  color: #e6e6e6 !important;
+}
+
+.maincontainer {
+  background-image: url('../img/back2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-right: 0px;
+}
+
+.container2 {
+  color: white;
+  background-color: #252f8e;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 0px;
+}
+
+.bottone1 {
+  color: #fff;
+  background-color: #f2a60d;
+  border: 1px solid #fff;
+}
+
+.bottone1:hover {
+  background-color: #5d69d5;
+  border: 1px solid #5d69d5;
+}
+
+.bottone2 {
+  color: #fff;
+  background-color: black;
+  border: 2px solid #fff;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.img1 img {
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+}
+
+.img2 img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid#fff;
+  margin-top: -130px;
+}
+
+.card:hover .img2 img {
+  border-color: #2f3db6;
+  transition: .7s;
+}
+
+.card-text {
+  padding: 10px;
+}
+
+.projectsection .card-body img{
+  height: 100%;
+  width: 100%;
+  border: solid 2px #cccccc;
+}
+
+.contactsection .fa-twitter, .contactsection .fa-linkedin, .contactsection .fa-instagram, .contactsection .fa-facebook, .contactsection .fa-github{
+  font-size: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: black;
+}
+.contactsection .fa-twitter:hover, .contactsection .fa-linkedin:hover, .contactsection .fa-instagram:hover, .contactsection .fa-facebook:hover, .contactsection .fa-github:hover {
+  color: #2f3db6;
+}
+.contactsection h2{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer{
+  background-color: #1a2265;
+  color: #d5d5d5;
+  padding-top: 20px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .img2 img {
+    margin-top: -75px;
+  }
+  .img1 img {
+    height: 100px;
+    width: 100%;
+  }
+  .card-title{
+    padding-top: 20;
+  }
+
+}

@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CDN ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Mapbox stuff -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <title>MARIO</title>
+
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ">
+    <!-- py-3 = padding on Y axis(top & bottom) / p-lg-0 = padding on large screen = 0 -->
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- <img src="img/logo.png" width="50" height="60"> LOGO --> Mario Site
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto text-center">
+          <li>
+            <a href="#test1" class="nav-link active"> Test 1</a>
+          </li>
+          <li>
+            <a href="#test2" class="nav-link"> Test 2</a>
+          </li>
+          <li>
+            <a href="#test3" class="nav-link"> Test 3</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- SHOWCASE -->
+
+  <section class="bg-dark text-light pt-5 text-center text-sm-start py-3 p-lg-0 pt-lg-5">
+    <!-- pt-5= padding top 5 -->
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h1>Ehi questo è un <span class="text-warning">sito di prova</span></h1>
+          <p class="lead my-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quia nulla enim debitis nobis optio odit!</p>
+          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modaltest"> Button with modal test</button>
+        </div>
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/logo.png"> <!-- mb-5 = margin bottom 5 / d-none = display noone / -->
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+
+  <section class="bg-primary text-light p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md-0"> Test Newsletter </h3>
+
+        <div class="input-group news-input">
+          <input type="text" class="form-control" placeholder="Enter Email">
+          <div class="input-group-append">
+            <button class="btn btn-dark" type="button">Button Test</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOXES -->
+  <section id="test1" class="p-5">
+    <div class="">
+      <div class="row text-center g-4">
+        <!-- g-4 = gap 4 può essere usato anche sugli assi x e y -->
+
+        <div class="col-md ">
+          <!-- col-md fa in modo che le colonne siano aggiunte solo in medium screens -->
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3"> TITLE TEST</h3>
+              <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aliquam voluptatum dolores atque, nulla ipsam.</p>
+              <a href="#" class="btn btn-primary">Button test</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md ">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-person-square"></i>
+              </div>
+              <h3 class="card-title mb-3"> TITLE TEST</h3>
+              <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aliquam voluptatum dolores atque, nulla ipsam.</p>
+              <a href="#" class="btn btn-dark">Button test</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md ">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="card-title mb-3"> TITLE TEST</h3>
+              <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aliquam voluptatum dolores atque, nulla ipsam.</p>
+              <a href="#" class="btn btn-primary">Button test</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ANOTHER SECTION -->
+
+  <section id="#" class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="img/test2.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-md p-5">
+          <h2>Text test</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa inventore molestiae, libero, voluptate ipsam neque!
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae soluta explicabo assumenda laudantium iusto esse quia eos, deleniti, debitis quisquam tempora cum, neque suscipit similique at. Omnis officiis odio, aperiam?</p>
+          <a href="#" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Read more
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="#" class="p-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-5">
+          <h2>Text test</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa inventore molestiae, libero, voluptate ipsam neque!
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae soluta explicabo assumenda laudantium iusto esse quia eos, deleniti, debitis quisquam tempora cum, neque suscipit similique at. Omnis officiis odio, aperiam?</p>
+          <a href="#" class="btn btn-light mt-3">
+            <i class="bi bi-chevron-right"></i> Read more
+          </a>
+        </div>
+        <div class="col-md">
+          <img src="img/test1.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Question section -->
+  <section id="test2" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Template test</h2>
+
+      <div class="accordion accordion-flush" id="test2">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#test-one">
+              Accortion test 1
+            </button>
+          </h2>
+          <div id="test-one" class="accordion-collapse collapse" data-bs-parent="#test2">
+            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eum iusto dicta beatae quo aut, esse maiores facilis. Quaerat tempore molestias exercitationem vitae ad dolor, iste tenetur harum aspernatur
+              voluptatem amet ipsa, distinctio obcaecati saepe dolorum dolore natus dolorem enim, maiores cum ipsum aliquam in odit eaque! Fugit pariatur dolores neque dicta amet aliquam accusamus, corporis ad consectetur fuga et perferendis repellat
+              sint dolorum, suscipit voluptatum iusto harum laudantium itaque nostrum eos quisquam doloribus. Ipsum, temporibus. Perspiciatis dolor dicta, fuga?</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#test-two">
+              Accortion test 2
+            </button>
+          </h2>
+          <div id="test-two" class="accordion-collapse collapse" data-bs-parent="#test2">
+            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat autem dolore saepe optio commodi, assumenda molestias animi. Illo laboriosam nostrum dolore, placeat, debitis aut ab minus. Voluptatibus
+              asperiores necessitatibus quis id odit minima, ratione laborum molestias incidunt earum praesentium eius repudiandae! Veniam accusamus magni saepe exercitationem, a facilis optio quidem eos molestias voluptatibus, corporis temporibus
+              voluptate mollitia. Dolore velit, harum.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#test-three">
+              Accortion test 3
+            </button>
+          </h2>
+          <div id="test-three" class="accordion-collapse collapse" data-bs-parent="#test2">
+            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro esse doloremque modi iste illo alias ea similique, a placeat laudantium deleniti praesentium quibusdam maiores culpa explicabo? Quaerat aut
+              provident dolorem itaque molestias, quod iusto, suscipit maiores perferendis fuga omnis ut!</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Box part 2 -->
+
+  <section id="instructors" class="p-5 bg-primary">
+    <div class="container">
+      <h2 class="text-center text-white"> Test box part two</h2>
+      <p class="lead text-center text-white mb-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sint!
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="">
+              <h3 class="card-title">Mario Rossi</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius beatae velit minima sint, odio totam asperiores iste a saepe dolor!</p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/men/15.jpg" class="rounded-circle mb-3" alt="">
+              <h3 class="card-title">Gennaro Esposito</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius beatae velit minima sint, odio totam asperiores iste a saepe dolor!</p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="">
+              <h3 class="card-title">Chiara Leoni</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius beatae velit minima sint, odio totam asperiores iste a saepe dolor!</p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="https://randomuser.me/api/portraits/women/18.jpg" class="rounded-circle mb-3" alt="">
+              <h3 class="card-title">Emanuela lolle</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius beatae velit minima sint, odio totam asperiores iste a saepe dolor!</p>
+              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Last section (map + info) -->
+  <section class="p-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md">
+          <h2 class="text-center mb-4">Contact info</h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold">Main Location:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At assumenda accusantium aperiam perspiciatis non minima qui blanditiis nulla? Obcaecati, qui!
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Main Location:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At assumenda accusantium aperiam perspiciatis non minima qui blanditiis nulla? Obcaecati, qui!
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Main Location:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At assumenda accusantium aperiam perspiciatis non minima qui blanditiis nulla? Obcaecati, qui!
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Main Location:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At assumenda accusantium aperiam perspiciatis non minima qui blanditiis nulla? Obcaecati, qui!
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md">
+          <div id="map"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copryright &copy; Mario Giannantonio </p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modaltest" tabindex="-1" role="dialog" aria-labelledby="modaltestLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modaltestLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill the form!</p>
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">First Name:</label>
+              <input type="text" class="form-control" id="first-name">
+            </div>
+
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">Second Name:</label>
+              <input type="text" class="form-control" id="first-name">
+            </div>
+
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">Age:</label>
+              <input type="text" class="form-control" id="first-name">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <!-- MAPBOX STUFF -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JpcDUiLCJhIjoiY2t1NndtamJlM3A0dTJvcDg2cXdwNGZheiJ9.eK_OBv6QZwFfSdtrLLCweA';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-71.060982, 42.35725],
+      zoom: 20,
+    });
+  </script>
+
+
+</body>
+
+</html>
